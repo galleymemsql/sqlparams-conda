@@ -27,4 +27,4 @@ jobs:
 
     - name: Publish package
       run: |
-        anaconda upload --no-progress --user SingleStore --token ${{ secrets.ANACONDA_TOKEN }} artifacts/sqlparams-*.tar.bz2
+        anaconda -t ${{ secrets.ANACONDA_TOKEN }} upload --force --no-progress --user SingleStore --label main artifacts/sqlparams-*.tar.bz2
