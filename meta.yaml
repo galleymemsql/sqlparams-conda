@@ -1,0 +1,25 @@
+package:
+    name: sqlparams
+    version: 3.0.0
+
+source:
+    url: https://files.pythonhosted.org/packages/26/e7/1718b2e8a6622662412ba8d0f5b4ad5fd43c8079980f8810b1462b3d043d/sqlparams-3.0.0.tar.gz
+    sha256: 2ad27aab848e9b678c70d3fd2aa0c2aa486a22c4d2e492e28051455704218d6b
+
+build:
+    noarch: python
+    script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+    build:
+        - python
+        - pip
+    run:
+        - python
+
+about:
+    home: https://python-sql-parameters.readthedocs.io/en/latest/index.html
+    license: MIT
+    summary: Convert DB API 2.0 named parameters to ordinal parameters
+    doc_url: https://python-sql-parameters.readthedocs.io/en/latest/index.html
+    dev_url: https://github.com/cpburnz/python-sql-parameters
