@@ -1,13 +1,13 @@
+
 package:
     name: sqlparams
-    version: 3.0.0
+    version: 4.0.0
 
 source:
-    url: https://files.pythonhosted.org/packages/26/e7/1718b2e8a6622662412ba8d0f5b4ad5fd43c8079980f8810b1462b3d043d/sqlparams-3.0.0.tar.gz
-    sha256: 2ad27aab848e9b678c70d3fd2aa0c2aa486a22c4d2e492e28051455704218d6b
+    url: https://files.pythonhosted.org/packages/17/34/7a9675b60424d065504bc54dca780319ad0d72184ef06875c64dc8276bec/sqlparams-4.0.0.tar.gz
+    sha256: 1d917944325f2ebc400d0a60ea8646f7cee18221924a6c53db94b1012aea6053
 
 build:
-    noarch: python
     script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
